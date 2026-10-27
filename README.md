@@ -1,3 +1,20 @@
+# LLM and reasoning study workspace
+
+This personal workspace includes the companion resources for both of Sebastian Raschka's books in one repository:
+
+- **Build a Large Language Model (From Scratch):** the chapter folders, appendices, and setup resources at the repository root. The original book README follows below.
+- **Build a Reasoning Model (From Scratch):** the complete companion repository in [reasoning-from-scratch/](reasoning-from-scratch/README.md).
+
+A normal clone of this repository includes both sets of files. Use each book's own setup instructions when running its examples.
+
+The imported code, exercises, solutions, and example results belong to the original authors and contributors. They are reference material, not a claim of personal implementation. See [source provenance and maintenance notes](SOURCE_NOTES.md).
+
+```bash
+git clone https://github.com/SquirmyWormy275/LLMs-from-scratch.git
+```
+
+---
+
 # Build a Large Language Model (From Scratch)
 
 This repository contains the code for developing, pretraining, and finetuning a GPT-like LLM and is the official code repository for the book [Build a Large Language Model (From Scratch)](https://amzn.to/4fqvn0D).
