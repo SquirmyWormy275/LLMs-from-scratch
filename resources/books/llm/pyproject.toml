@@ -55,10 +55,6 @@ bonus = [
     "tqdm>=4.65.0",
 ]
 
-[tool.pytest.ini_options]
-# Run the reasoning book's tests from its own directory and environment.
-addopts = ["--ignore=reasoning-from-scratch"]
-
 [tool.ruff]
 line-length = 140
 
