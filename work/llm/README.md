@@ -6,6 +6,7 @@ Use this area for your own chapter implementations, exercise attempts, tests, an
 
 - [Original book resources and chapter index](../../resources/books/llm/README.md)
 - [Original setup instructions](../../resources/books/llm/setup/README.md)
+- [Numbered exercise checklist](EXERCISE_CHECKLIST.md)
 - [Chapter 2 personal workspace](ch02/README.md)
 - [Personal work conventions](../README.md)
 - [Workspace workflow](../../docs/WORKFLOW.md)

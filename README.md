@@ -16,7 +16,7 @@ A personal engineering workspace for studying Sebastian Raschka's books, buildin
 ## Learning sequence
 
 1. Start with the LLM book's Chapter 1 for orientation; the first hands-on material is [Chapter 2: Working with Text Data](https://livebook.manning.com/book/build-a-large-language-model-from-scratch/chapter-2).
-2. Use the [Chapter 2 companion notebook](resources/books/llm/ch02/01_main-chapter-code/ch02.ipynb) as a code reference and write personal attempts in the [Chapter 2 workspace](work/llm/ch02/README.md). Numbered exercise prompts appear in the book text, not in the companion notebook.
+2. Use the [Chapter 2 companion notebook](resources/books/llm/ch02/01_main-chapter-code/ch02.ipynb) as a code reference and write personal attempts in the [Chapter 2 workspace](work/llm/ch02/README.md). Follow the [LLM exercise checklist](work/llm/EXERCISE_CHECKLIST.md) as you progress. Numbered exercise prompts appear in the book text, not in the companion notebook.
 3. Continue through the LLM book before starting the [reasoning-book work area](work/reasoning/README.md). Keep each book's environment separate.
 
 ## Selected work
