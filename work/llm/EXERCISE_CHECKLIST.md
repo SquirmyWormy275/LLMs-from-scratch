@@ -12,7 +12,7 @@ No numbered exercises.
 
 [Companion code](../../resources/books/llm/ch02/01_main-chapter-code/ch02.ipynb) · [Personal Chapter 2 workspace](ch02/README.md)
 
-- [ ] Exercise 2.1
+- [x] Exercise 2.1
 - [ ] Exercise 2.2
 
 ## [Chapter 3 — Attention mechanisms](https://livebook.manning.com/book/build-a-large-language-model-from-scratch/chapter-3)

@@ -10,4 +10,6 @@ Mark progress in the [LLM exercise checklist](../EXERCISE_CHECKLIST.md) when you
 
 The environment is `work/llm/.venv` (Python 3.12.14). It was created with `uv venv --python 3.12 work/llm/.venv` and, for the opening Chapter 2 sections, installed with `uv pip install --python work/llm/.venv/bin/python ipykernel requests tiktoken`. Observed versions: ipykernel 7.4.0, requests 2.34.2, tiktoken 0.14.0. The environment is ignored by Git.
 
+For section 2.6, CPU PyTorch and NumPy were installed with `uv pip install --python work/llm/.venv/bin/python --torch-backend cpu 'torch>=2.2.2'` and `uv pip install --python work/llm/.venv/bin/python 'numpy>=1.26'`. Observed versions: torch 2.15.0+cpu and NumPy 2.5.4. Imports of `torch`, `numpy`, and `torch.utils.data` succeeded.
+
 From the repository root, activate it with `source work/llm/.venv/bin/activate`. In VS Code, select the same Python executable for the interpreter and notebook kernel.
