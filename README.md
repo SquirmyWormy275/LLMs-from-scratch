@@ -13,6 +13,12 @@ A personal engineering workspace for studying Sebastian Raschka's books, buildin
 | How work moves from an exercise to a reviewable project | [Workspace workflow](docs/WORKFLOW.md) |
 | Source revisions, licenses, and import history | [Source provenance](SOURCE_NOTES.md) |
 
+## Learning sequence
+
+1. Start with the LLM book's Chapter 1 for orientation; the first hands-on material is [Chapter 2: Working with Text Data](https://livebook.manning.com/book/build-a-large-language-model-from-scratch/chapter-2).
+2. Use the [Chapter 2 companion notebook](resources/books/llm/ch02/01_main-chapter-code/ch02.ipynb) as a code reference and write personal attempts in the [Chapter 2 workspace](work/llm/ch02/README.md). Numbered exercise prompts appear in the book text, not in the companion notebook.
+3. Continue through the LLM book before starting the [reasoning-book work area](work/reasoning/README.md). Keep each book's environment separate.
+
 ## Selected work
 
 No completed projects are featured yet. As projects become ready to review, this section will link directly to their existing folders under [work/](work/README.md).
@@ -39,7 +45,7 @@ Personal work identifies whether it was implemented from an explanation, reprodu
     git clone https://github.com/SquirmyWormy275/LLMs-from-scratch.git
     cd LLMs-from-scratch
 
-That single clone includes both books. Each book retains its own setup instructions and environment:
+That single clone includes both books. Each book retains its own setup instructions and dependency definitions; local environments are prepared as needed:
 
 - [LLM-book setup](resources/books/llm/setup/README.md)
 - [Reasoning-book setup](resources/books/reasoning/ch02/02_setup-tips/README.md)

@@ -8,7 +8,7 @@ This is the home for the repository owner's implementation attempts, tests, expe
 
 | Area | Purpose | Current state |
 | --- | --- | --- |
-| [llm/](llm/README.md) | Work following the LLM book | Not started in this repository |
+| [llm/](llm/README.md) | Work following the LLM book | Chapter 2 workspace prepared; no committed personal implementation |
 | [reasoning/](reasoning/README.md) | Work following the reasoning book | Not started in this repository |
 | [projects/](projects/README.md) | Independent extensions and applications | No projects selected |
 

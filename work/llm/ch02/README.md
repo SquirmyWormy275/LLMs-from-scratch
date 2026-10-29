@@ -1,8 +1,8 @@
 # Chapter 2 — personal workspace
 
-**Status:** prepared for Alex's first attempt; no personal implementation has been added.
+**Status:** workspace prepared; no personal implementation has been committed.
 
-The original Chapter 2 reference is at [`resources/books/llm/ch02/01_main-chapter-code/ch02.ipynb`](../../../resources/books/llm/ch02/01_main-chapter-code/ch02.ipynb). Write the personal attempt in [ch02.ipynb](ch02.ipynb). The book's exercise statement is the authority for any numbered exercise.
+Read [Chapter 2 in the book](https://livebook.manning.com/book/build-a-large-language-model-from-scratch/chapter-2) for the numbered exercise prompts. Exercise 2.1 appears in section 2.5, "Byte pair encoding." The [original Chapter 2 companion notebook](../../../resources/books/llm/ch02/01_main-chapter-code/ch02.ipynb) contains chapter code, but not the exercise statement. Write the personal attempt in [ch02.ipynb](ch02.ipynb).
 
 ## Local environment
 
