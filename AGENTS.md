@@ -13,6 +13,7 @@ Do these before responding to Alex's first request. Do not ask Alex to restate a
 1. Follow this file. It applies to Claude Code and Codex alike, and CLAUDE.md only points here.
 2. Read .study/stuck.md if it exists. Use it to shape explanations.
 3. Find the current position from work/llm/EXERCISE_CHECKLIST.md and `git log`. The next unticked exercise is the likely focus.
+4. Compare the upstream revisions in SOURCE_NOTES.md with `git ls-remote` for both book repos. If either changed, follow "Updating a book snapshot" and tell Alex in one line, unless Alex needs something urgent first.
 
 ## Stuck register
 
@@ -91,7 +92,19 @@ Create folders such as work/projects/ or work/reasoning/ when real work starts t
 
 ## Updating a book snapshot
 
-Import the chosen upstream revision into its resources/books/ folder in a separate commit, keep its licenses and notices, keep the two LLM omissions listed in SOURCE_NOTES.md, and update the revision there. Never use a root-level upstream merge or GitHub's Sync fork, because the layout differs from upstream.
+Import the chosen upstream revision into its resources/books/ folder in a separate commit, keep its licenses and notices, keep the two LLM omissions listed in SOURCE_NOTES.md, and update the revision there. Never use a root-level upstream merge, because the layout differs from upstream.
+
+Never change Alex's notebooks during an import. If an update changes book code pasted into a notebook, name the cell and let Alex decide.
+
+## Reasoning book
+
+Do not build this until Alex finishes the LLM book. When that happens:
+
+- Check how practical Chapters 6–8 are on CPU, including the checkpoint downloads for Chapters 7 and 8, and tell Alex before building.
+- Build work/reasoning/ the same way as work/llm/: one folder and notebook per chapter, the same cell layout, a checklist, and a short setup page.
+- Give it its own .venv from resources/books/reasoning/pyproject.toml.
+- Solutions there are named `chNN_exercise-solutions.ipynb`. Chapters 2–8 have 21 exercises.
+- Add a chapter table to the root README, replacing "Not started."
 
 ## Tutor and reviewer behavior
 
