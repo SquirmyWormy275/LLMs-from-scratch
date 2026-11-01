@@ -2,6 +2,8 @@
 
 This is Alex's learning and engineering workspace for Sebastian Raschka's books and later independent projects. Alex writes the substantive code and explanations. AI assistance defaults to repository administration, tutoring, debugging discussions, and review.
 
+The main principle: AI assistance takes on work with no educational value, so Alex can focus on studying, understanding concepts, and writing code. When setup could go either way, default to the most backend help that leaves the exercise itself to Alex. Keep admin work as painless as possible, and prefer the option that creates the least rework.
+
 This agreement records Alex's expressed direction. Do not edit it to expand your own remit. A later explicit request for a particular contribution is scoped to that request unless Alex changes the overall agreement.
 
 ## Ownership and layout
@@ -25,6 +27,36 @@ Do not generate, complete, rewrite, refactor, or patch the following without a s
 This applies wherever the work lives, including source files, notebooks, scripts, YAML, README text, and reports. Calling a change cleanup or scaffolding does not make it administrative.
 
 Requests such as “review,” “debug,” “continue,” “help me,” or “handle Git” do not by themselves authorize substantive code changes.
+
+## Exercise notebook setup
+
+Preparing exercise notebooks is administrative work and is authorized. Under work/llm/, keep one notebook per chapter and one code cell per exercise, laid out in this order:
+
+1. `# Exercise X.Y: title`, then the prompt in a comment block.
+2. `# Book code: <source>`, then whatever book code the exercise needs. This includes classes the exercise modifies, data loading, downloads, and trained checkpoints.
+3. `# Alex's code starts here`, with nothing after it.
+
+Copy book code from resources/books/ rather than retyping it. Each notebook's title cell credits the book once. Never place exercise solutions, hints toward them, or results in the setup; the exercise solution notebooks stay out of Alex's work.
+
+## Documentation style
+
+This repo is for human readers, including future employers. It should read like one person's organized study notes, not like agent output. All instructions for agents live here and nowhere else.
+
+- Keep READMEs to a few plain lines and links. Add a README only when a folder needs setup steps or real project notes.
+- Do not describe roles, authorship rules, AI assistance, status definitions, or how attribution works outside this file. README.md may keep its one line pointing here.
+- Attribute by doing it: credit the source where it is used, once, in plain words. Do not explain or promise attribution.
+- Do not add "Back to" links, pointer pages, reviewer checklists, or status banners for work that does not exist yet.
+- Comments in notebooks state only what a reader needs. Say a thing once in the repo.
+- Write as a person would: no "this workspace," "administrative scaffolding," "provenance," or "personal contribution."
+- The root README is the entry point and links directly to each notebook, within one or two clicks.
+
+Changes already made under this style: removed docs/WORKFLOW.md, work/README.md, work/projects/README.md, work/reasoning/README.md, work/llm/ch02/README.md, and resources/README.md; cut README.md, work/llm/README.md, SOURCE_NOTES.md, and the checklist to essentials; shortened notebook comments. Paraphrased prompts are disclosed once, in work/llm/README.md. Commit history was left as is.
+
+Create folders such as work/projects/ or work/reasoning/ when real work starts there. Keep code, notes, and results together, and link finished projects from the root README rather than copying them.
+
+## Updating a book snapshot
+
+Import the chosen upstream revision into its resources/books/ folder in a separate commit, keep its licenses and notices, keep the two LLM omissions listed in SOURCE_NOTES.md, and update the revision there. Never use a root-level upstream merge or GitHub's Sync fork, because the layout differs from upstream.
 
 ## Tutor and reviewer behavior
 

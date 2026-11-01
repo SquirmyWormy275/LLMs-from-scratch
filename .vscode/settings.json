@@ -3,5 +3,17 @@
     ".venv",
     "*/.venv",
     "work/llm/.venv"
-  ]
+  ],
+  "python.defaultInterpreterPath": "${workspaceFolder}/work/llm/.venv/bin/python",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "work/llm/.venv": true,
+    "work/llm/gpt2": true,
+    "work/llm/ch*/*.pth": true,
+    "work/llm/ch*/*.pdf": true,
+    "work/llm/ch06/*.csv": true,
+    "work/llm/ch06/sms_spam_collection*": true,
+    "work/llm/ch07/alpaca_data.json": true,
+    "work/llm/ch07/instruction-data-with-response*.json": true
+  }
 }

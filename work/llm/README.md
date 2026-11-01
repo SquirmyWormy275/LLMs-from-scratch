@@ -1,16 +1,18 @@
-# Personal work — LLM book
+# LLM book setup
 
-**Status:** [Chapter 2 workspace](ch02/README.md) prepared; no personal implementation has been committed here yet.
+```bash
+uv venv --python 3.12 work/llm/.venv
+source work/llm/.venv/bin/activate
+uv pip install --torch-backend cpu 'torch>=2.2.2'
+uv pip install ipykernel requests tiktoken numpy matplotlib tqdm pandas tensorflow
+```
 
-Use this area for your own chapter implementations, exercise attempts, tests, and notes. Create a chapter or topic folder when you start that work; there are no prewritten solution scaffolds.
+Tested with Python 3.12.14, torch 2.15.0, tiktoken 0.14.0, and tensorflow 2.21.0.
 
-- [Original book resources and chapter index](../../resources/books/llm/README.md)
-- [Original setup instructions](../../resources/books/llm/setup/README.md)
-- [Numbered exercise checklist](EXERCISE_CHECKLIST.md)
-- [Chapter 2 personal workspace](ch02/README.md)
-- [Personal work conventions](../README.md)
-- [Workspace workflow](../../docs/WORKFLOW.md)
+Select `work/llm/.venv` as the notebook kernel and run the setup cell at the top of each notebook first.
 
-Keep the implementation, its checks, and any measured results together. Attribute any code copied or adapted from the reference material.
+- Chapter 5 trains its model on the first run, about 10 minutes on CPU, then reuses the saved file.
+- GPT-2 weights download to `work/llm/gpt2/`.
+- Chapters 6 and 7 train when you call `run_finetuning()`.
 
-[Back to personal work](../README.md)
+Exercise prompts are paraphrased, so check the book for the exact wording.

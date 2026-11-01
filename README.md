@@ -1,59 +1,27 @@
-# LLM & Reasoning Lab
+# LLMs from Scratch
 
-A personal engineering workspace for studying Sebastian Raschka's books, building original implementations, and developing projects that can be inspected and reproduced.
+My work through two books by Sebastian Raschka: [*Build a Large Language Model (From Scratch)*](https://www.manning.com/books/build-a-large-language-model-from-scratch) and [*Build a Reasoning Model (From Scratch)*](https://www.manning.com/books/build-a-reasoning-model-from-scratch).
 
-**Current status:** the workspace and reference resources are organized. No personal model implementations or measured experiment results have been added to this repository yet.
+## LLM book
 
-## Start here
+| Chapter | My notebook | Book code |
+| --- | --- | --- |
+| 2. Working with text data | [ch02](work/llm/ch02/ch02.ipynb) | [code](resources/books/llm/ch02/01_main-chapter-code/) |
+| 3. Attention mechanisms | [ch03](work/llm/ch03/ch03.ipynb) | [code](resources/books/llm/ch03/01_main-chapter-code/) |
+| 4. GPT model | [ch04](work/llm/ch04/ch04.ipynb) | [code](resources/books/llm/ch04/01_main-chapter-code/) |
+| 5. Pretraining | [ch05](work/llm/ch05/ch05.ipynb) | [code](resources/books/llm/ch05/01_main-chapter-code/) |
+| 6. Classification fine-tuning | [ch06](work/llm/ch06/ch06.ipynb) | [code](resources/books/llm/ch06/01_main-chapter-code/) |
+| 7. Instruction fine-tuning | [ch07](work/llm/ch07/ch07.ipynb) | [code](resources/books/llm/ch07/01_main-chapter-code/) |
+| Appendix A. PyTorch | [appendix-A](work/llm/appendix-A/appendix-A.ipynb) | [code](resources/books/llm/appendix-A/01_main-chapter-code/) |
 
-| What you want to see | Where to go |
-| --- | --- |
-| Personal implementations, exercises, and projects | [Personal work index](work/README.md) |
-| The two books' original code and learning resources | [Book resource index](resources/README.md) |
-| How work moves from an exercise to a reviewable project | [Workspace workflow](docs/WORKFLOW.md) |
-| Source revisions, licenses, and import history | [Source provenance](SOURCE_NOTES.md) |
+[Progress](work/llm/EXERCISE_CHECKLIST.md) · [Setup](work/llm/README.md)
 
-## Learning sequence
+## Reasoning book
 
-1. Start with the LLM book's Chapter 1 for orientation; the first hands-on material is [Chapter 2: Working with Text Data](https://livebook.manning.com/book/build-a-large-language-model-from-scratch/chapter-2).
-2. Use the [Chapter 2 companion notebook](resources/books/llm/ch02/01_main-chapter-code/ch02.ipynb) as a code reference and write personal attempts in the [Chapter 2 workspace](work/llm/ch02/README.md). Follow the [LLM exercise checklist](work/llm/EXERCISE_CHECKLIST.md) as you progress. Numbered exercise prompts appear in the book text, not in the companion notebook.
-3. Continue through the LLM book before starting the [reasoning-book work area](work/reasoning/README.md). Keep each book's environment separate.
+Not started. [Book code](resources/books/reasoning/)
 
-## Selected work
+## Credits
 
-No completed projects are featured yet. As projects become ready to review, this section will link directly to their existing folders under [work/](work/README.md).
+Everything in [resources/books/](resources/books/) is Sebastian Raschka's, included under its original licenses. See [SOURCE_NOTES.md](SOURCE_NOTES.md).
 
-Each featured project should explain the problem, personal contribution, source material, how to run it, evidence for its results, and its limitations. The repository owner writes those technical explanations and chooses when a project is ready.
-
-## What belongs where
-
-| Area | Ownership and purpose |
-| --- | --- |
-| [work/llm/](work/llm/README.md) | Personal LLM-book implementations, exercise attempts, tests, and notes |
-| [work/reasoning/](work/reasoning/README.md) | Personal reasoning-book implementations, evaluations, tests, and notes |
-| [work/projects/](work/projects/README.md) | Independent projects and extensions developed from the learning work |
-| [resources/books/llm/](resources/books/llm/README.md) | Upstream LLM-book reference snapshot |
-| [resources/books/reasoning/](resources/books/reasoning/README.md) | Upstream reasoning-book reference snapshot |
-| [docs/](docs/WORKFLOW.md), this README, and [AGENTS.md](AGENTS.md) | Workspace administration and contribution rules |
-
-**Resources are attributed to their original authors.** Imported solutions, tests, commit history, and example results are reference material. They do not represent personal implementations or completed learning milestones.
-
-Personal work identifies whether it was implemented from an explanation, reproduced, adapted from code, or developed as an extension. Reused material is cited where it is used.
-
-## Get the workspace
-
-    git clone https://github.com/SquirmyWormy275/LLMs-from-scratch.git
-    cd LLMs-from-scratch
-
-That single clone includes both books. Each book retains its own setup instructions and dependency definitions; local environments are prepared as needed:
-
-- [LLM-book setup](resources/books/llm/setup/README.md)
-- [Reasoning-book setup](resources/books/reasoning/ch02/02_setup-tips/README.md)
-
-Run reference examples from the relevant book directory. Personal projects under work/ will document their own setup as they are built; there is no shared root Python environment.
-
-## Authorship and assistance
-
-The repository owner writes the substantive implementations, tests, experiments, and technical conclusions. AI assistance is used for requested Git administration, organization, and help with stuck points. The [working agreement](AGENTS.md) records that boundary. Any specifically requested AI code contribution must be identified honestly.
-
-Source licenses and notices remain with the corresponding [book resources](SOURCE_NOTES.md).
+Claude Code and Codex handle admin work in this repo, following [AGENTS.md](AGENTS.md).

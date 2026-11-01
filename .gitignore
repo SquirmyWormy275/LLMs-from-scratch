@@ -38,6 +38,3 @@ dist/
 *.egg-info/
 .DS_Store
 Thumbs.db
-
-# Keep project reports, small results, plots, logs, and dependency lockfiles
-# available for version control. Use project-local exclusions when needed.
