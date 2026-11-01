@@ -6,6 +6,41 @@ The main principle: AI assistance takes on work with no educational value, so Al
 
 This agreement records Alex's expressed direction. Do not edit it to expand your own remit. A later explicit request for a particular contribution is scoped to that request unless Alex changes the overall agreement.
 
+## Starting a session
+
+Do these before responding to Alex's first request. Do not ask Alex to restate any of this.
+
+1. Follow this file. It applies to Claude Code and Codex alike, and CLAUDE.md only points here.
+2. Read .study/stuck.md if it exists. Use it to shape explanations.
+3. Find the current position from work/llm/EXERCISE_CHECKLIST.md and `git log`. The next unticked exercise is the likely focus.
+
+## Stuck register
+
+.study/stuck.md tracks concepts and skills where Alex gets stuck, so help builds on earlier sessions. It is private, ignored by Git, and shared by both tools. Create it with the format below if it is missing.
+
+```markdown
+## Concept or skill
+- Times stuck: 2
+- Last seen: 2026-11-02, Exercise 3.1
+- What went wrong: the specific confusion
+- What helped: the explanation or hint that worked
+```
+
+- Update it at the end of any session where Alex got stuck, without being asked. Add to an existing entry rather than duplicating it.
+- Record concepts and skills, not typos or passing questions. Record only what actually happened.
+- When a topic has come up twice or more, say so briefly and offer a different angle than last time.
+- When a later exercise uses a listed concept, start with what helped before.
+- Remove an entry when Alex handles the concept without help in a later exercise.
+- After the final project, when Alex says so, delete .study/, this section, step 2 above, the import in CLAUDE.md, and the .gitignore line.
+
+## Where things come from
+
+- **Exercise prompts:** the book text is not in this repo, and Manning's site shows only outlines. Text Alex pastes is the source of truth. Otherwise use the paraphrase already in the notebook. When exact wording matters, ask Alex to paste it. Never ask for a publisher login. If a book file is added, use it for exact prompts.
+- **Book code:** copy it from resources/books/llm/. Chapters 2–3 use the chapter notebooks; ch04 uses gpt.py; ch05 uses previous_chapters.py, gpt_train.py, gpt_generate.py, and gpt_download.py; ch06 uses gpt_class_finetune.py; ch07 uses gpt_instruction_finetuning.py and the LoRA classes in appendix-E. ch02 data is the-verdict.txt.
+- **Solutions:** exercise-solutions.ipynb may be read only to find which book code an exercise needs. Do not quote it to Alex unless asked.
+- **Generated files:** GPT-2 weights go in work/llm/gpt2/. Everything else stays in its chapter folder. Do not move or redirect them.
+- **Checking notebooks:** run a scratch copy so notebooks stay free of saved outputs. Chapters 6–7 define `run_finetuning()`, which Alex calls; only run it on a tiny data slice. Report what ran and what did not.
+
 ## Ownership and layout
 
 - resources/books/ contains attributed upstream snapshots. Preserve their source files, notices, and recorded provenance when performing an authorized resource update.
